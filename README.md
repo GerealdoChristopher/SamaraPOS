@@ -1,42 +1,45 @@
-# 🇱🇰 OpenPOSLK
+# SamaraPOS
 
-**OpenPOSLK** is a Laravel-based, fully open-source Point of Sale and inventory management system.
+A modern Point of Sale (POS) system built with Laravel for small businesses.
 
-🎯 It is designed for two key purposes:
-
-- 👨‍💻 **Developers**: Learn how to build real-world business systems from scratch, using clean architecture and Laravel best practices — no third-party UI packages or prebuilt admin panels.
-- 🏪 **Small Businesses**: A free-to-use POS and stock system for Sri Lankan (and global) shops, usable without subscriptions, licenses, or proprietary software.
-
----
-
-## ✨ Features (MVP)
+## ✨ Features
 
 - 🔐 User login with roles (Admin / Cashier)
 - 📦 Product and category management
 - 🛒 POS screen with cart and checkout
 - 🧾 Printable invoices
-- 📊 Basic sales reports
-- 🗃️ Stock control
+- 📊 Sales reports
+- 📉 Stock control
 
----
+## 🛠️ Tech Stack
 
-## 📦 Tech Stack
+- **Framework:** Laravel
+- **Frontend:** Blade + Tailwind CSS
+- **Database:** MySQL / SQLite
 
-- Laravel (PHP Framework)
-- Blade (Laravel templating)
-- Tailwind CSS
-- MySQL / SQLite
-- Built 100% from scratch — no Filament/Nova/Backpack
-
----
-
-## 🚀 Getting Started
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/openposlk.git
-cd openposlk
+# Clone repository
+git clone https://github.com/GerealdoChristopher/SamaraPOS.git
+
+# Enter directory
+cd SamaraPOS
+
+# Copy environment file
 cp .env.example .env
+
+# Install PHP dependencies
 composer install
+
+# Install NPM dependencies
+npm install
+
+# Generate app key
 php artisan key:generate
+
+# Run migrations and seeders
 php artisan migrate --seed
+
+# Start development server
 php artisan serve
